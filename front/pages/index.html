@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC:wght@700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon"  href="/assets/img/logo-online.png">
+    <title>Mi Tienda online</title>
+    <style>
+        @layer utilities {
+        @keyframes fall {
+            0% {
+            transform: translateY(-10%) rotate(0deg);
+            opacity: 1;
+            }
+            100% {
+            transform: translateY(110vh) rotate(360deg);
+            opacity: 0;
+            }}
+        .animate-fall {
+            animation: fall linear infinite;
+        }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+<div class="petalos">
+    
+<div class="fixed top-[-50px] left-[5%] z-20 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 8s; animation-delay: 0s;"></div>
+<div class="fixed top-[-50px] left-[15%] z-20 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 10s; animation-delay: 0.5s;"></div>
+<div class="fixed top-[-50px] left-[25%] z-10 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 12s; animation-delay: 1s;"></div>
+<div class="fixed top-[-50px] left-[35%] z-10 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 9s; animation-delay: 1.5s;"></div>
+<div class="fixed top-[-50px] left-[45%] z-10 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 11s; animation-delay: 2s;"></div>
+<div class="fixed top-[-50px] left-[55%] z-10 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 7s; animation-delay: 2.5s;"></div>
+<div class="fixed top-[-50px] left-[65%] z-20 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 10s; animation-delay: 3s;"></div>
+<div class="fixed top-[-50px] left-[75%] z-10 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 13s; animation-delay: 1.2s;"></div>
+<div class="fixed top-[-50px] left-[85%] z-20 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 9s; animation-delay: 2.2s;"></div>
+<div class="fixed top-[-50px] left-[95%] z-20 w-8 h-8 bg-[url('/assets/img/petalo.png')] bg-contain bg-no-repeat opacity-80 animate-fall" style="animation-duration: 10s; animation-delay: 0.8s;"></div>
+
+</div>
+
+<main class="pt-24">
+<header class="flex items-center justify-around  w-full h-17 p-0 m-0 fixed top-0 left-0 w-full z-10 bg-red-50 shadow-md bg-red-50 bg-red-50">
+    <img src="/assets/img/logo2.png" width="300px" class="max-w-full h-auto ml-24" >
+    <div class="text-amber-900 flex space-x-6 mr-20 font-sans mt-4  text-amber-800 px-4 py-2 rounded-md focus:outline-none">
+        <div class="relative group inline-block">
+            <button class="px-4 py-2 bg-pink-100 text-amber-900 rounded-md focus:outline-none">
+            Categorías
+            </button>
+            <div class="absolute hidden group-hover:block bg-white shadow-md mt-1 rounded-md w-40">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50">Vestidos</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50">Blusas</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50">Pantalones</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50">Accesorios</a>
+            </div>
+        </div>
+        <a class="bg-pink-100 px-4 py-2 rounded-md" href="/pages/contacto.html" data-modal-target="contactModal" >Contacto</a>
+        <a class="bg-pink-100 px-4 py-2 rounded-md" href="/pages/login.html" data-modal-target="loginModal">Login</a>
+    </div>
+    <img class="absolute top-20 left-0 w-[400px] -mt-10 -ml-10 " src="/assets/img/flower-1.png" alt="Flower">
+    <img class=" absolute top-24 right-0 w-[400px] -mt-10 -mr-10 w-[400px] " src="/assets/img/flower-2.png" alt="Flower">
+</header>
+
+<div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-lg shadow-lg p-20 w-100 relative">
+    <button class="close-modal absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+    <h2 class="text-center bg-red-100 mb-4 text-lg  text-black rounded-md ">Contacto</h2>
+    <form class="flex flex-col">
+        <label for="titulo">Nombre</label>
+        <input class="border-2 border-pink-300/50 rounded-md" type="text" id="nombre" name="nombre">
+
+        <label for="titulo">Email</label>
+        <input class=" border-2 border-pink-300/50 rounded-md" type="text" id="email" name="email">
+        
+        <label for="mensaje">Escribe tu mensaje:</label><br>
+        <textarea class="border-2 border-pink-300/50  rounded-md" id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea>
+    </form>
+    <button class="bg-red-100 rounded-md mt-10 w-24 h-10">Enviar!</button>
+    </div>
+</div>
+
+<div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-lg shadow-lg p-16 w-96 relative">
+        <button class="close-modal absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl">&times;</button>
+        <h2 class="text-center bg-red-100 mb-6 text-lg  text-black rounded-md">Iniciar sesión</h2>
+        <div id="google-sign-in-button" class="flex justify-center"></div>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+    </div>
+</div>
+
+<section class="pt-20">
+    <div>
+    <div id="contenedor" class="grid grid-cols-4 gap-6 p-4 items-center m-20 ">
+    </div>
+    </div>
+</section>
+
+</main>
+<footer class="flex text-amber-900 items-center justify-around h-24 w-full h-17 p-0 m-0 w-full bg-red-50 shadow-md bg-red-50 bg-red-50 ">
+<h2>© 2025 Daiana. Proyecto personal para práctica frontend.</h2>
+</footer>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="../public/bundle.js"></script>
+</body>
+</html>
