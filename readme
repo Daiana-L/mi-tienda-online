@@ -5,11 +5,9 @@ Permite a los usuarios explorar productos obtenidos desde una base de datos Mong
 con una interfaz moderna construida con HTML y Tailwind CSS. El sistema incluye autenticación mediante Google Login, 
 y una estructura modular conectada con Express, Axios y JavaScript puro, empacado eficientemente con Webpack.
 
-## Demo
+## Primera Demo
 
-[![Demo de mi-tienda-online](https://img.youtube.com/vi/Ws-hE6gpY0A/maxresdefault.jpg)](https://www.youtube.com/watch?v=Ws-hE6gpY0A)
-
-
+[![Demo de mi-tienda-online] (https://youtu.be/Ws-hE6gpY0A?si=-a5ZPXw6GwrfUxTV)
 
 Tecnologías utilizadas:
 Frontend:
