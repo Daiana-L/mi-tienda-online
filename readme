@@ -1,6 +1,31 @@
-                             Mi-tienda-online
+                                     Mi-tienda-online
 
 mi-tienda-online es una tienda virtual desarrollada como proyecto frontend + backend completo.
 Permite a los usuarios explorar productos obtenidos desde una base de datos MongoDB,
 con una interfaz moderna construida con HTML y Tailwind CSS. El sistema incluye autenticación mediante Google Login, 
 y una estructura modular conectada con Express, Axios y JavaScript puro, empacado eficientemente con Webpack.
+
+Tecnologías utilizadas:
+Frontend:
+
+HTML5
+
+Tailwind CSS
+
+JavaScript
+
+Webpack
+
+Axios
+
+Backend:
+
+Node.js
+
+Express
+
+MongoDB (Mongoose)
+
+Autenticación:
+
+Google OAuth 2.0
