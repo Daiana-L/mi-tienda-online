@@ -1,10 +1,11 @@
-const Product = require("../models/Product");
+const Product = require("../models/Product"); // asegurate de tener este import
+
+const getProduct = async (categoria) => {
+  const filtro = categoria ? { categoria } : {};
+  const productos = await Product.find(filtro);
+  return productos;
+};
 
 module.exports = {
-getProduct: async () => {
-    const product = await Product.find();
-    console.log("PRODUCTOS:", product);
-    console.log(product)
-    return product;
-    
-}};
+  getProduct,
+};

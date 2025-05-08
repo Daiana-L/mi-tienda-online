@@ -1,5 +1,7 @@
 const axios = require("axios");
 const renderProduct = require("./renderProduct");
+const filtrarCategoria = require("./filtrarCategorias");
+import { initModals } from './modals';
 const fetchProducts = async () => {
     try {
         const response = await axios.get("http://localhost:3000/Products");
@@ -12,7 +14,29 @@ const fetchProducts = async () => {
 
 fetchProducts();
 
-import { initModals } from './modals';
+
+document.getElementById("btn-vestidos").addEventListener
+("click", () => {
+    filtrarCategoria('vestidos');
+});
+
+document.getElementById("btn-blusas").addEventListener
+("click", () => {
+    filtrarCategoria('blusas');
+});
+
+document.getElementById("btn-pantalones").addEventListener
+("click", () => {
+    filtrarCategoria('pantalones');
+});
+
+document.getElementById("btn-accesorios").addEventListener
+("click", () => {
+    filtrarCategoria('accesorios');
+});
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 initModals();

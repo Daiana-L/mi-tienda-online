@@ -1,7 +1,13 @@
-const productsService = require("../services/productsService")
+const productsService = require("../services/productsService");
 
-module.exports ={
-getAllProducts: async (req, res) =>{
-const product = await productsService.getProduct();
-res.status(200).json(product);
-}};
+module.exports = {
+  getAllProducts: async (req, res) => {
+    try {
+      const { categoria } = req.query;
+      const product = await productsService.getProduct(categoria);
+      res.status(200).json(product);
+    } catch (error) {
+      res.status(500).json({ message: "Error al obtener los productos", error });
+    }
+  }
+};
