@@ -1,0 +1,15 @@
+Instalación y uso
+Cloná el repositorio:
+git clone https://github.com/tuusuario/mi-tienda-online.git
+
+Instalá las dependencias del backend:
+
+cd backend
+npm install
+Instalá las dependencias del frontend:
+
+cd ../frontend
+npm install
+Configurá las variables de entorno para MongoDB y Google OAuth.
+
+Iniciá ambos servidores (frontend y backend)(npm start).
